@@ -4,7 +4,7 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'my-cart',
+  selector: 'cart',
   template: `
     <h1>Cart Component!!</h1>
     `
