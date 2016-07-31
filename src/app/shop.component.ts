@@ -8,17 +8,22 @@
 import { Component } from '@angular/core';
 import { ROUTER_DIRECTIVES } from "@angular/router";
 
+import {MdButton} from '@angular2-material/button';
+import {MdToolbar} from '@angular2-material/toolbar';
+import {MdIcon, MdIconRegistry} from '@angular2-material/icon';
+
 @Component({
+  moduleId: module.id,
   selector: 'app-root',
-  template: `
-    <h1>Shopping</h1>
-    <hr>
-     <a [routerLink]="['/']">Home</a>
-     <a [routerLink]="['/cart']">Cart</a>
-    <hr>
-    <router-outlet></router-outlet>
-`,
-  directives: [ROUTER_DIRECTIVES]
+  templateUrl: 'shop.component.html',
+  styleUrls: ['shop.component.css'],
+  directives: [
+    ROUTER_DIRECTIVES,
+    MdButton,
+    MdToolbar,
+    MdIcon
+  ],
+  providers: [ MdIconRegistry ]
 })
 
 export class ShopComponent { }

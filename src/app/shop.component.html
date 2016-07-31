@@ -1,0 +1,17 @@
+<md-toolbar color="primary">
+  <md-toolbar-col>
+    <md-icon>menu</md-icon>
+  </md-toolbar-col>
+  <span class="example-fill-remaining-space"></span>
+  <md-toolbar-col>
+    <a [routerLink]="['/cart']">
+      <button md-icon-button>
+        <md-icon>shopping_cart</md-icon>
+      </button>
+    </a>
+  </md-toolbar-col>
+</md-toolbar>
+
+<router-outlet></router-outlet>
+
+
