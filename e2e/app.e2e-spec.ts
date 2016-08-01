@@ -1,14 +1,14 @@
-import { ShoppingCartPage } from './app.po';
+import { ShoppingCartNewPage } from './app.po';
 
-describe('shopping-cart App', function() {
-  let page: ShoppingCartPage;
+describe('shopping-cart-new App', function() {
+  let page: ShoppingCartNewPage;
 
   beforeEach(() => {
-    page = new ShoppingCartPage();
+    page = new ShoppingCartNewPage();
   });
 
   it('should display message saying app works', () => {
     page.navigateTo();
-    expect(page.getParagraphText()).toEqual('app works!');
+    expect(page.getParagraphText()).toEqual('sc works!');
   });
 });

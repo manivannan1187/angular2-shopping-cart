@@ -1,3 +1,2 @@
 export * from './environment';
-export * from './shop.component';
-export * from './shop.routes';
+export * from './shopping-cart.component';
