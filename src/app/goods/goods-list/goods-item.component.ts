@@ -1,9 +1,11 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 import {MdButton} from '@angular2-material/button';
 import {MdIcon, MdIconRegistry} from '@angular2-material/icon';
+import {MD_CARD_DIRECTIVES} from '@angular2-material/card';
 
 import { Goods } from '../goods';
+import {ROUTER_DIRECTIVES} from "@angular/router";
 
 @Component({
   moduleId: module.id,
@@ -13,16 +15,14 @@ import { Goods } from '../goods';
   directives: [
     MdIcon,
     MdButton,
+    MD_CARD_DIRECTIVES,
+    ROUTER_DIRECTIVES
   ],
   providers: [ MdIconRegistry ]
 })
-export class GoodsItemComponent implements OnInit {
+export class GoodsItemComponent {
   @Input() goods: Goods;
-  goodsId: number;
+  @Input() goodsId: number;
 
-  constructor() { }
-
-  ngOnInit() {
-  }
 
 }

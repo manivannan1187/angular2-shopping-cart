@@ -1,3 +1,8 @@
-md-card {
-  width: 400px;
+sc-goods-item {
+  display: block;
+  width: 500px;
+  height: 500px;
+  margin: 20px;
+  flex-direction: column;
+  float: left;
 }

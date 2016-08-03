@@ -1,17 +1,19 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
+import {ROUTER_DIRECTIVES} from "@angular/router";
+
 import { GoodsListComponent } from './goods-list/';
+import {Goods} from "./goods";
 
 @Component({
   moduleId: module.id,
   selector: 'sc-goods',
   templateUrl: 'goods.component.html',
-  directives: [GoodsListComponent]
+  directives: [
+    GoodsListComponent,
+    ROUTER_DIRECTIVES
+
+  ]
 })
-export class GoodsComponent implements OnInit {
-
-  constructor() { }
-
-  ngOnInit() {
-  }
+export class GoodsComponent {
 
 }

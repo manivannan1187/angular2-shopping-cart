@@ -1,6 +1,8 @@
 import { Component } from '@angular/core';
+import {ROUTER_DIRECTIVES} from "@angular/router";
+
 import { HeaderComponent } from './header.component';
-import { GoodsComponent } from './goods/';
+import {GoodsService} from "./goods/goods.service";
 
 @Component({
   moduleId: module.id,
@@ -8,8 +10,9 @@ import { GoodsComponent } from './goods/';
   templateUrl: 'shopping-cart.component.html',
   directives: [
     HeaderComponent,
-    GoodsComponent
-  ]
+    ROUTER_DIRECTIVES
+  ],
+  providers: [GoodsService]
 })
 export class ShoppingCartComponent {
 }

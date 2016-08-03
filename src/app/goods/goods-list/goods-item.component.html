@@ -1,7 +1,11 @@
-<img md-card-image  src={{goods.imagePath}}/>
-<md-card-content class="secondary">
-  {{goods.description}}
-</md-card-content>
-<button md-icon-button>
-  <md-icon>shopping_cart</md-icon>
-</button>
+<a [routerLink] = "[goodsId]">
+  <md-card>
+    <img md-card-image  src={{goods.imagePath}}/>
+    <md-card-content class="secondary">
+      {{goods.description}}
+    </md-card-content>
+    <button md-icon-button>
+      <md-icon>shopping_cart</md-icon>
+    </button>
+  </md-card>
+</a>

@@ -1,3 +1,2 @@
-<md-card>
-  <sc-goods-item [goods]="goods"></sc-goods-item>
-</md-card>
+<!--<sc-goods-item *ngFor="let goods of goodsList" [goods]="goods" (click)="onSelected(goods)"></sc-goods-item>-->
+<sc-goods-item *ngFor="let goods of goodsList; let i = index" [goods]="goods" [goodsId]="i"></sc-goods-item>
