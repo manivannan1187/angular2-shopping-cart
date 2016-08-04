@@ -1,8 +1,4 @@
 sc-goods-item {
-  display: block;
-  width: 500px;
-  height: 500px;
-  margin: 20px;
-  flex-direction: column;
-  float: left;
+  box-sizing: border-box;
+  width: 33.3333333%;
 }

@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {ROUTER_DIRECTIVES} from "@angular/router";
 
 import {MdButton} from '@angular2-material/button';
 import {MdToolbar} from '@angular2-material/toolbar';
@@ -12,7 +13,8 @@ import {MdIcon, MdIconRegistry} from '@angular2-material/icon';
   directives: [
     MdButton,
     MdToolbar,
-    MdIcon
+    MdIcon,
+    ROUTER_DIRECTIVES
   ],
   providers: [ MdIconRegistry ]
 })

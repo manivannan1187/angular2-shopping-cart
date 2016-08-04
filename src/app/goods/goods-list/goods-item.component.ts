@@ -6,6 +6,7 @@ import {MD_CARD_DIRECTIVES} from '@angular2-material/card';
 
 import { Goods } from '../goods';
 import {ROUTER_DIRECTIVES} from "@angular/router";
+import {CartService} from "../../shared/cart.service";
 
 @Component({
   moduleId: module.id,
@@ -23,6 +24,9 @@ import {ROUTER_DIRECTIVES} from "@angular/router";
 export class GoodsItemComponent {
   @Input() goods: Goods;
   @Input() goodsId: number;
+
+
+  constructor(public cartService: CartService) {}
 
 
 }

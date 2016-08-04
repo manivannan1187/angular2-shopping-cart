@@ -1,0 +1,17 @@
+
+sc-goods-detail {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+md-card.red {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  color: red;
+}
+
+md-card-image {
+  width: 50%;
+}

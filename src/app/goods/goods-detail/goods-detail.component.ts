@@ -1,10 +1,12 @@
 import { Component, OnInit, OnDestroy } from '@angular/core';
-
-import {MdButton} from '@angular2-material/button';
-import {MdIcon, MdIconRegistry} from '@angular2-material/icon';
-import {Goods} from "../goods";
 import {Router, ActivatedRoute} from "@angular/router";
 import {Subscription} from "rxjs/Rx";
+
+import {MdButton} from '@angular2-material/button';
+import {MD_CARD_DIRECTIVES} from '@angular2-material/card';
+import {MdIcon, MdIconRegistry} from '@angular2-material/icon';
+
+import {Goods} from "../goods";
 import {GoodsService} from "../goods.service";
 
 @Component({
@@ -15,6 +17,7 @@ import {GoodsService} from "../goods.service";
   directives: [
     MdIcon,
     MdButton,
+    MD_CARD_DIRECTIVES
   ],
   providers: [ MdIconRegistry ]
 })

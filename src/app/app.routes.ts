@@ -4,13 +4,14 @@
 import { provideRouter} from '@angular/router';
 
 import {GoodsComponent} from "./goods/goods.component";
-import {GOODS_ROUTES} from "./goods/goods.routes";
 import {GoodsDetailComponent} from "./goods/goods-detail/goods-detail.component";
+import { CartComponent } from "./cart/cart.component";
 
 
 export const APP_ROUTES_PROVIDERS = [
   provideRouter([
-    { path: '', component: GoodsComponent, children: GOODS_ROUTES },
+    { path: '', component: GoodsComponent },
+    { path: 'cart', component: CartComponent},
     { path: ':id', component: GoodsDetailComponent }
   ])
 ];

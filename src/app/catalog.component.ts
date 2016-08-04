@@ -3,16 +3,21 @@ import {ROUTER_DIRECTIVES} from "@angular/router";
 
 import { HeaderComponent } from './header.component';
 import {GoodsService} from "./goods/goods.service";
+import {CartService} from "./shared/cart.service";
 
 @Component({
   moduleId: module.id,
   selector: 'sc-root',
-  templateUrl: 'shopping-cart.component.html',
+  templateUrl: 'catalog.component.html',
+  styleUrls: ['catalog.component.css'],
   directives: [
     HeaderComponent,
     ROUTER_DIRECTIVES
   ],
-  providers: [GoodsService]
+  providers: [
+    GoodsService,
+    CartService
+  ]
 })
-export class ShoppingCartComponent {
+export class CatalogComponent {
 }
