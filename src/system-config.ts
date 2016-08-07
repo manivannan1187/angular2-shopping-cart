@@ -21,6 +21,8 @@ const materialPkgs:string[] = [
   'core',
   'button',
   'card',
+  'list',
+  'input',
   'toolbar',
   'icon'
 ];

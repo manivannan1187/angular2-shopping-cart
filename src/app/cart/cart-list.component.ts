@@ -1,17 +1,26 @@
 import { Component, OnInit } from '@angular/core';
+
+import {MdButton} from '@angular2-material/button';
+import {MdIcon, MdIconRegistry} from '@angular2-material/icon';
+import { MdInput } from '@angular2-material/input';
+
 import {CartService} from "../shared/cart.service";
 import {CartItemComponent} from "./cart-item.component";
 
 @Component({
   moduleId: module.id,
-  selector: 'sc-cart',
-  templateUrl: 'cart.component.html',
-  styleUrls: ['cart.component.css'],
+  selector: 'sc-cart-list',
+  templateUrl: 'cart-list.component.html',
+  styleUrls: ['cart-list.component.css'],
   directives: [
+    MdIcon,
+    MdButton,
+    MdInput,
     CartItemComponent
-  ]
+  ],
+  providers: [ MdIconRegistry ]
 })
-export class CartComponent implements OnInit {
+export class CartListComponent implements OnInit {
   cartList = [];
   constructor(private cartService: CartService) { }
 

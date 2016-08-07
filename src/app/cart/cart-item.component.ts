@@ -4,6 +4,7 @@ import {Goods} from "../goods/goods";
 import {MdButton} from '@angular2-material/button';
 import {MdIcon, MdIconRegistry} from '@angular2-material/icon';
 import {MD_CARD_DIRECTIVES} from '@angular2-material/card';
+import {MD_LIST_DIRECTIVES} from '@angular2-material/list';
 
 @Component({
   moduleId: module.id,
@@ -13,7 +14,8 @@ import {MD_CARD_DIRECTIVES} from '@angular2-material/card';
   directives: [
     MdIcon,
     MdButton,
-    MD_CARD_DIRECTIVES
+    MD_CARD_DIRECTIVES,
+    MD_LIST_DIRECTIVES
   ],
   providers: [ MdIconRegistry ]
 })

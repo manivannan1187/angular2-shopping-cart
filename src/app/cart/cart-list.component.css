@@ -1,0 +1,48 @@
+.cart-list {
+  width: 100%;
+  max-width: 100%;
+  margin: 20px 0;
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+td, th {
+  text-align: left;
+  padding: 8px;
+}
+
+th {
+  white-space: nowrap;
+}
+
+tbody td {
+  border-bottom: 2px solid #eee;
+}
+
+.cart-list__img img {
+  width: 60px;
+  height: 60px;
+}
+
+.cart-list__price {
+  text-align: center;
+}
+
+.price {
+  font-weight: 700;
+}
+
+.cart-list__input {
+  text-align: center;
+}
+
+.input {
+  font-size: 16px;
+  border: none;
+  text-align: center;
+  width: 4em;
+}
+
+.cart-list__subtotal {
+  text-align: center;
+}

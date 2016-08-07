@@ -13,6 +13,7 @@ export class GoodsService {
   constructor() { }
 
   getGoods() {
+    console.log(this.goodsList);
     return this.goodsList;
   }
   getGoodsItem(id: number) {
