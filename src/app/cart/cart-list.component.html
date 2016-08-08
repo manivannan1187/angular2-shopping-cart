@@ -31,9 +31,6 @@
       </td>
       <td class="cart-list__input">
         <input class="input" #qty (keyup)="cartService.editQty(qty.value, i)" value="{{goods.qty}}" maxlength="4">
-        <!--<md-input #qty  value="1"></md-input>-->
-        <!--<md-input placeholder="Name"></md-input>-->
-        <!--<md-input maxLength="5"></md-input>-->
       </td>
       <td class="cart-list__subtotal">
         {{goods.price * qty.value}}

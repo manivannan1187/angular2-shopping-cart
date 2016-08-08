@@ -15,18 +15,18 @@ export class CartService {
   getCart() {
     return this.cartList;
   }
-  addToCart(item) {
+  addToCart(product) {
     let qty:number = 1;
     if (this.cartList.length == 0) {
-      this.cartList.push(new ProductList(item.name, item.price, item.imagePath, qty));
+      this.cartList.push(new ProductList(product.name, product.price, product.imagePath, qty));
     } else {
-      this.cartList = this.cartList.filter((it, i) => {
-        if (this.cartList[i].name == item.name) {
-          qty = this.cartList[i].qty + 1;
+      for(let i = 0; i < this.cartList.length; i++) {
+        if (this.cartList[i].name == product.name) {
+          this.cartList[i].qty++;
+          return true;
         };
-        return this.cartList[i].name !== item.name;
-      });
-      this.cartList.push(new ProductList(item.name, item.price, item.imagePath, qty));
+      }
+      this.cartList.push(new ProductList(product.name, product.price, product.imagePath, qty));
     }
   }
 
@@ -37,3 +37,4 @@ export class CartService {
     this.cartList[i].qty = +value;
   }
 }
+
