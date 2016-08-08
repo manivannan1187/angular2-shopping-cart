@@ -7,13 +7,13 @@ import {MD_CARD_DIRECTIVES} from '@angular2-material/card';
 import {MdIcon, MdIconRegistry} from '@angular2-material/icon';
 
 import {Product} from "../product";
-import {GoodsService} from "../goods.service";
+import {ProductService} from "../product.service";
 
 @Component({
   moduleId: module.id,
   selector: 'sc-goods-detail',
-  templateUrl: 'goods-detail.component.html',
-  styleUrls: ['goods-detail.component.css'],
+  templateUrl: 'product-detail.component.html',
+  styleUrls: ['product-detail.component.css'],
   directives: [
     MdIcon,
     MdButton,
@@ -21,22 +21,22 @@ import {GoodsService} from "../goods.service";
   ],
   providers: [ MdIconRegistry ]
 })
-export class GoodsDetailComponent implements OnInit, OnDestroy {
-  selectedGoods: Product;
-  private goodsIndex: number;
+export class ProductDetailComponent implements OnInit, OnDestroy {
+  selectedProduct: Product;
+  private productIndex: number;
   private subsctiption: Subscription;
 
   constructor(private router: Router,
               private route: ActivatedRoute,
-              private goodsService: GoodsService
+              private productService: ProductService
   ) { }
 
   ngOnInit() {
     this.subsctiption = this.route.params.subscribe(
       (params: any) => {
-        this.goodsIndex = params['id'];
-        this.selectedGoods = this.goodsService.getGoodsItem(this.goodsIndex);
-        console.log(this.selectedGoods);
+        this.productIndex = params['id'];
+        this.selectedProduct = this.productService.getProductItem(this.productIndex);
+        console.log(this.selectedProduct);
       }
     )
   }

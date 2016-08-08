@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 import {ROUTER_DIRECTIVES} from "@angular/router";
 
 import { HeaderComponent } from './header.component';
-import {GoodsService} from "./goods/goods.service";
+import {ProductService} from "./products/product.service";
 import {CartService} from "./shared/cart.service";
 
 @Component({
@@ -15,7 +15,7 @@ import {CartService} from "./shared/cart.service";
     ROUTER_DIRECTIVES
   ],
   providers: [
-    GoodsService,
+    ProductService,
     CartService
   ]
 })

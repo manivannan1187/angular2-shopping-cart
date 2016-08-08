@@ -23,7 +23,7 @@ import {CartService} from "../../shared/cart.service";
 })
 export class ProductItemComponent {
   @Input() product: Product;
-  @Input() goodsId: number;
+  @Input() productId: number;
 
 
   constructor(public cartService: CartService) {}

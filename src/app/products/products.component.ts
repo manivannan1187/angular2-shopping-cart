@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 
-import { ProductListComponent } from './goods-list/';
+import { ProductListComponent } from './product-list/product-list.component';
 
 @Component({
   moduleId: module.id,
