@@ -1,13 +1,13 @@
 import { Injectable } from '@angular/core';
-import { Goods } from './goods';
+import { Product } from './product';
 
 @Injectable()
 export class GoodsService {
-  private goodsList: Goods[] = [
-    new Goods('product1', 100.00, 'Lorem1 Ipsum is simply dummy text of the printing and typesetting industry.', 'http://www.novelupdates.com/img/noimagefound.jpg'),
-    new Goods('product2', 200.00, 'Lorem2 Ipsum is simply dummy text of the printing and typesetting industry.', 'http://www.novelupdates.com/img/noimagefound.jpg'),
-    new Goods('product3', 300.00, 'Lorem3 Ipsum is simply dummy text of the printing and typesetting industry.', 'http://www.novelupdates.com/img/noimagefound.jpg'),
-    new Goods('product4', 400.00, 'Lorem4 Ipsum is simply dummy text of the printing and typesetting industry.', 'http://www.novelupdates.com/img/noimagefound.jpg')
+  private goodsList: Product[] = [
+    new Product('product1', 100.00, 'Lorem1 Ipsum is simply dummy text of the printing and typesetting industry.', 'https://c1.staticflickr.com/1/186/382004453_f4b2772254.jpg'),
+    new Product('product2', 200.00, 'Lorem2 Ipsum is simply dummy text of the printing and typesetting industry.', 'https://c1.staticflickr.com/1/186/382004453_f4b2772254.jpg'),
+    new Product('product3', 300.00, 'Lorem3 Ipsum is simply dummy text of the printing and typesetting industry.', 'https://c1.staticflickr.com/1/186/382004453_f4b2772254.jpg'),
+    new Product('product4', 400.00, 'Lorem4 Ipsum is simply dummy text of the printing and typesetting industry.', 'https://c1.staticflickr.com/1/186/382004453_f4b2772254.jpg')
   ];
 
   constructor() { }

@@ -1,5 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
-import {Goods} from "../goods/goods";
+import {Product} from "../goods/product";
 
 import {MdButton} from '@angular2-material/button';
 import {MdIcon, MdIconRegistry} from '@angular2-material/icon';
@@ -20,7 +20,7 @@ import {MD_LIST_DIRECTIVES} from '@angular2-material/list';
   providers: [ MdIconRegistry ]
 })
 export class CartItemComponent implements OnInit {
-  @Input() goods: Goods;
+  @Input() goods: Product;
   constructor() { }
 
   ngOnInit() {

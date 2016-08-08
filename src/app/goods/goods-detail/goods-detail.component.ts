@@ -6,7 +6,7 @@ import {MdButton} from '@angular2-material/button';
 import {MD_CARD_DIRECTIVES} from '@angular2-material/card';
 import {MdIcon, MdIconRegistry} from '@angular2-material/icon';
 
-import {Goods} from "../goods";
+import {Product} from "../product";
 import {GoodsService} from "../goods.service";
 
 @Component({
@@ -22,7 +22,7 @@ import {GoodsService} from "../goods.service";
   providers: [ MdIconRegistry ]
 })
 export class GoodsDetailComponent implements OnInit, OnDestroy {
-  selectedGoods: Goods;
+  selectedGoods: Product;
   private goodsIndex: number;
   private subsctiption: Subscription;
 
