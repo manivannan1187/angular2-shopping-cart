@@ -4,6 +4,7 @@
   margin: 20px 0;
   border-collapse: collapse;
   border-spacing: 0;
+  color: #5677a0;
 }
 
 td, th {
@@ -13,10 +14,13 @@ td, th {
 
 th {
   white-space: nowrap;
+  background-color: #eff2f6;
 }
-
+tr:nth-child(even) {
+  background-color: #fafbfc;
+}
 tbody td {
-  border-bottom: 2px solid #eee;
+  border-bottom: 2px solid #dfe3e9;
 }
 
 .cart-list__img img {
@@ -38,11 +42,12 @@ tbody td {
 
 .input {
   font-size: 16px;
-  border: 2px solid #eee;
+  border: 2px solid #dfe3e9;
   border-radius: 6px;
   padding: 8px 0;
   text-align: center;
   width: 4em;
+  color: #5677a0;
 }
 
 .cart-list__subtotal {
@@ -53,4 +58,7 @@ tbody td {
   display: flex;
   justify-content: flex-end;
   margin-right: 2em;
+}
+.total_price {
+  color: #5677a0;
 }

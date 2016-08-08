@@ -1,10 +1,27 @@
-<md-card class="red">
-  <img md-card-image  src="{{selectedProduct?.imagePath}}/">
-  <h1>Detail Product</h1>
-  <md-card-content class="secondary">
+<div class="product-top">
+  <div class="product-img">
+    <img src="{{selectedProduct?.imagePath}}/">
+  </div>
+  <div class="product-form">
+    <md-card>
+      <h1>{{selectedProduct?.name}}</h1>
+      <span class="price">${{selectedProduct?.price}}</span>
+      <div class="add-to-cart">
+        <span class="qty">Qty:</span>
+        <input type="text" class="add">
+        <button md-raised-button color="primary">
+          Add to Cart
+        </button>
+        <button md-raised-button>
+          Add to Wishlist
+        </button>
+      </div>
+    </md-card>
+  </div>
+</div>
+<md-card>
+  <h2>Details</h2>
+  <md-card-content>
     {{selectedProduct?.description}}
   </md-card-content>
-  <button md-icon-button>
-    <md-icon>shopping_cart</md-icon>
-  </button>
 </md-card>

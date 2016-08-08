@@ -7,3 +7,9 @@ body {
 sc-cart-list {
   width: 100%;
 }
+
+sc-goods-detail {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}

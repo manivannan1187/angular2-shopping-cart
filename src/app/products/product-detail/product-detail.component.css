@@ -1,17 +1,41 @@
-
 sc-goods-detail {
   width: 100%;
   display: flex;
   flex-direction: column;
 }
 
-md-card.red {
-  width: 100%;
+.product-img {
+  width: 50%;
+  padding: 1em;
+}
+.product-img img {
+  min-width: 100%;
+}
+.product-top {
   display: flex;
-  flex-direction: column;
-  color: red;
 }
 
-md-card-image {
+.product-form {
   width: 50%;
+  padding: 1em;
+}
+
+.add-to-cart {
+  padding: 2em 0 0;
+}
+
+.add-to-cart button:last-child {
+  margin-left: 1em;
+}
+
+.add {
+  height: 37px;
+  box-sizing: border-box;
+  border: none;
+  width: 6em;
+  margin: 0 1em;
+  padding: 0 6px;
+  border-radius: 3px;
+  border: 2px solid #eee;
+  font-size: 16px;
 }
