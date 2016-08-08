@@ -38,7 +38,9 @@ tbody td {
 
 .input {
   font-size: 16px;
-  border: none;
+  border: 2px solid #eee;
+  border-radius: 6px;
+  padding: 8px 0;
   text-align: center;
   width: 4em;
 }
