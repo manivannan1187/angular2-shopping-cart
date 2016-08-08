@@ -43,3 +43,6 @@
     </tr>
   </tbody>
 </table>
+<div *ngIf="cartList.length" class="totals">
+  <span class="total_price">Total price: {{getTotalPrice()}}</span>
+</div>

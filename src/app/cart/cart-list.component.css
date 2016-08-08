@@ -46,3 +46,9 @@ tbody td {
 .cart-list__subtotal {
   text-align: center;
 }
+
+.totals {
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 2em;
+}

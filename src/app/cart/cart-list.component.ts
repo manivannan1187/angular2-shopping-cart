@@ -28,5 +28,12 @@ export class CartListComponent implements OnInit {
     this.cartList = this.cartService.getCart();
     console.log(this.cartList);
   }
+  getTotalPrice() {
+    let total = 0;
+    this.cartList.forEach((product: any, i:number) => {
+      total += product.price * product.qty;
+    })
+    return total;
+  }
 
 }
