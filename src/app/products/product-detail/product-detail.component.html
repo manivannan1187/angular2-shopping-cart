@@ -8,8 +8,8 @@
       <span class="price">${{selectedProduct?.price}}</span>
       <div class="add-to-cart">
         <span class="qty">Qty:</span>
-        <input type="text" class="add">
-        <button md-raised-button color="primary">
+        <input #qty value="1" class="input">
+        <button md-raised-button color="primary" (click)="cartService.addToCart(selectedProduct, qty.value)">
           Add to Cart
         </button>
         <button md-raised-button>

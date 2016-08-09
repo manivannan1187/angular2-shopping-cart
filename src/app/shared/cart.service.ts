@@ -15,14 +15,16 @@ export class CartService {
   getCart() {
     return this.cartList;
   }
-  addToCart(product) {
-    let qty:number = 1;
+  addToCart(product, qtyString:string = "1") {
+    let qty = Number(qtyString);
+    console.log(typeof qty, qty);
     if (this.cartList.length == 0) {
       this.cartList.push(new ProductList(product.name, product.price, product.imagePath, qty));
     } else {
       for(let i = 0; i < this.cartList.length; i++) {
         if (this.cartList[i].name == product.name) {
-          this.cartList[i].qty++;
+          console.log(this.cartList[i].qty);
+          this.cartList[i].qty += qty;
           return true;
         };
       }

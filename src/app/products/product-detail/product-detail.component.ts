@@ -8,6 +8,7 @@ import {MdIcon, MdIconRegistry} from '@angular2-material/icon';
 
 import {Product} from "../product";
 import {ProductService} from "../product.service";
+import {CartService} from "../../shared/cart.service";
 
 @Component({
   moduleId: module.id,
@@ -28,7 +29,8 @@ export class ProductDetailComponent implements OnInit, OnDestroy {
 
   constructor(private router: Router,
               private route: ActivatedRoute,
-              private productService: ProductService
+              private productService: ProductService,
+              public cartService: CartService
   ) { }
 
   ngOnInit() {
