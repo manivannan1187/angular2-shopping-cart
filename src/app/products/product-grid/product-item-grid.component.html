@@ -1,0 +1,7 @@
+<div class="product-item">
+  <a [routerLink] = "[productId]">
+    <img src="{{product.imagePath}}/">
+  </a>
+  <p>{{product.name}}</p>
+  <button (click)="cartService.addToCart(product)">Add to Cart</button>
+</div>

@@ -1,0 +1,6 @@
+ct-product-item-grid {
+  display: flex;
+  width: 25%;
+  margin: 2% 2%;
+  box-sizing: border-box;
+}

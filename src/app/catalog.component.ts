@@ -1,23 +1,15 @@
-import { Component } from '@angular/core';
-import {ROUTER_DIRECTIVES} from "@angular/router";
-
-import { HeaderComponent } from './header.component';
-import {ProductService} from "./products/product.service";
-import {CartService} from "./shared/cart.service";
+import { Component, OnInit } from '@angular/core';
 
 @Component({
-  moduleId: module.id,
-  selector: 'sc-root',
+  selector: 'ct-catalog',
   templateUrl: 'catalog.component.html',
-  styleUrls: ['catalog.component.css'],
-  directives: [
-    HeaderComponent,
-    ROUTER_DIRECTIVES
-  ],
-  providers: [
-    ProductService,
-    CartService
-  ]
+  styleUrls: ['catalog.component.css']
 })
-export class CatalogComponent {
+export class CatalogComponent implements OnInit {
+
+  constructor() { }
+
+  ngOnInit() {
+  }
+
 }

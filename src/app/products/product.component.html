@@ -1,0 +1,6 @@
+<button (click)="setViewMode('grid')">Grid</button>
+<button (click)="setViewMode('list')">List</button>
+<div [ngSwitch]="viewMode">
+  <ct-product-grid class="grid" *ngSwitchCase="'grid'"></ct-product-grid>
+  <p *ngSwitchCase="'list'">ProductList</p>
+</div>

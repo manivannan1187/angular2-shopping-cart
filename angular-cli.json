@@ -1,7 +1,7 @@
 {
   "project": {
-    "version": "1.0.0-beta.10",
-    "name": "shopping-cart-new"
+    "version": "1.0.0-beta.11-webpack.2",
+    "name": "catalog"
   },
   "apps": [
     {
@@ -23,7 +23,7 @@
     }
   },
   "defaults": {
-    "prefix": "sc",
+    "prefix": "app",
     "sourceDir": "src",
     "styleExt": "css",
     "prefixInterfaces": false,
